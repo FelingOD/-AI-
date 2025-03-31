@@ -46,7 +46,7 @@ public class FSM : MonoBehaviour
         states.Add(StateType.Hit, new HitState(this));
         states.Add(StateType.Death, new DeathState(this));
 
-        //厨师状态为Idle
+        //初始状态为Idle
         TransitionState(StateType.Idle);
 
         parameter.animator = transform.GetComponent<Animator>();
